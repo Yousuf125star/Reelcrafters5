@@ -1,0 +1,1082 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YTS Reel Crafters - Astrology Content Growth Experts</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <style>
+    :root {
+      --teal-dark: hsl(180, 50%, 20%);
+      --teal-medium: hsl(180, 50%, 30%);
+      --teal-light: hsl(180, 50%, 40%);
+      
+      --gold-primary: hsl(45, 80%, 50%);
+      --gold-light: hsl(45, 80%, 60%);
+      --gold-dark: hsl(45, 80%, 40%);
+      
+      --neutral-dark: hsl(220, 20%, 10%);
+      --neutral-medium: hsl(220, 15%, 85%);
+      --neutral-light: hsl(220, 15%, 98%);
+    }
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Poppins', sans-serif;
+      color: var(--neutral-dark);
+      background-color: var(--neutral-light);
+      line-height: 1.6;
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Playfair Display', serif;
+      margin-bottom: 1rem;
+    }
+    
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+    
+    /* Utility Classes */
+    .text-center { text-align: center; }
+    .text-gold { color: var(--gold-primary); }
+    .text-teal { color: var(--teal-medium); }
+    .text-white { color: white; }
+    .mb-2 { margin-bottom: 0.5rem; }
+    .mb-4 { margin-bottom: 1rem; }
+    .mb-8 { margin-bottom: 2rem; }
+    .my-16 { margin-top: 4rem; margin-bottom: 4rem; }
+    .py-16 { padding-top: 4rem; padding-bottom: 4rem; }
+    
+    /* Button Styles */
+    .btn {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      border-radius: 9999px;
+      font-weight: 500;
+      text-decoration: none;
+      text-align: center;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+    
+    .btn-primary {
+      background-color: var(--gold-primary);
+      color: var(--teal-dark);
+    }
+    
+    .btn-primary:hover {
+      background-color: var(--gold-dark);
+      transform: scale(1.05);
+    }
+    
+    .btn-outline {
+      border: 2px solid var(--gold-primary);
+      color: var(--gold-primary);
+      background-color: transparent;
+    }
+    
+    .btn-outline:hover {
+      background-color: var(--gold-primary);
+      color: var(--teal-dark);
+    }
+    
+    /* Layout */
+    .flex {
+      display: flex;
+    }
+    
+    .flex-col {
+      flex-direction: column;
+    }
+    
+    .items-center {
+      align-items: center;
+    }
+    
+    .justify-center {
+      justify-content: center;
+    }
+    
+    .justify-between {
+      justify-content: space-between;
+    }
+    
+    .grid {
+      display: grid;
+    }
+    
+    .grid-cols-1 {
+      grid-template-columns: 1fr;
+    }
+    
+    .gap-4 {
+      gap: 1rem;
+    }
+    
+    .gap-8 {
+      gap: 2rem;
+    }
+    
+    /* Header/Navbar */
+    header {
+      background-color: var(--teal-dark);
+      padding: 1rem 0;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 100;
+    }
+    
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .logo {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--gold-primary);
+    }
+    
+    .nav-links {
+      display: flex;
+      list-style: none;
+    }
+    
+    .nav-links li {
+      margin-left: 1.5rem;
+    }
+    
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    
+    .nav-links a:hover {
+      color: var(--gold-primary);
+    }
+    
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(135deg, var(--teal-dark) 0%, var(--teal-medium) 100%);
+      color: white;
+      padding: 8rem 0 4rem;
+    }
+    
+    .hero-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .hero-text {
+      max-width: 650px;
+    }
+    
+    .hero h1 {
+      font-size: 2.5rem;
+      line-height: 1.2;
+      margin-bottom: 1rem;
+    }
+    
+    .hero p {
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+    }
+    
+    .hero-btns {
+      display: flex;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+    
+    .hero-image {
+      position: relative;
+      margin-top: 2rem;
+    }
+    
+    .hero-image img {
+      max-width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    }
+    
+    .stat-card {
+      position: absolute;
+      bottom: -20px;
+      left: -20px;
+      background: var(--teal-dark);
+      padding: 0.75rem;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+    
+    .stat-icon {
+      background: var(--gold-primary);
+      color: var(--teal-dark);
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      margin-right: 0.75rem;
+    }
+    
+    /* Trusted By Section */
+    .trusted-by {
+      padding: 4rem 0;
+      background-color: white;
+    }
+    
+    .trusted-logos {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 2rem;
+    }
+    
+    .trusted-logo {
+      margin: 1rem;
+      opacity: 0.7;
+      transition: opacity 0.3s ease;
+    }
+    
+    .trusted-logo:hover {
+      opacity: 1;
+    }
+    
+    /* Services Section */
+    .services {
+      padding: 5rem 0;
+      background-color: var(--neutral-light);
+    }
+    
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+    
+    .service-card {
+      background: white;
+      border-radius: 8px;
+      padding: 2rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
+    
+    .service-icon {
+      background: var(--teal-light);
+      color: white;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      margin-bottom: 1.5rem;
+      font-size: 1.5rem;
+    }
+    
+    /* Results Section */
+    .results {
+      background: linear-gradient(135deg, var(--teal-medium) 0%, var(--teal-dark) 100%);
+      color: white;
+      padding: 5rem 0;
+    }
+    
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+    
+    .stat-item {
+      text-align: center;
+      padding: 1.5rem;
+      background: rgba(255,255,255,0.1);
+      border-radius: 8px;
+    }
+    
+    .stat-number {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: var(--gold-primary);
+      margin-bottom: 0.5rem;
+    }
+    
+    /* Testimonials Section */
+    .testimonials {
+      padding: 5rem 0;
+      background-color: white;
+    }
+    
+    .testimonial-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+    
+    .testimonial-card {
+      background: var(--neutral-light);
+      border-radius: 8px;
+      padding: 2rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+    
+    .testimonial-text {
+      font-style: italic;
+      margin-bottom: 1.5rem;
+    }
+    
+    .testimonial-author {
+      display: flex;
+      align-items: center;
+    }
+    
+    .author-avatar {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin-right: 1rem;
+    }
+    
+    .author-avatar img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    
+    .author-name {
+      font-weight: 600;
+    }
+    
+    .author-title {
+      font-size: 0.875rem;
+      color: var(--teal-medium);
+    }
+    
+    /* Packages Section */
+    .packages {
+      padding: 5rem 0;
+      background-color: var(--neutral-light);
+    }
+    
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+    
+    .pricing-card {
+      background: white;
+      border-radius: 8px;
+      padding: 2rem;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+      transition: transform 0.3s ease;
+      border: 2px solid transparent;
+    }
+    
+    .pricing-card.featured {
+      border-color: var(--gold-primary);
+      transform: scale(1.05);
+    }
+    
+    .pricing-card:hover {
+      transform: translateY(-10px);
+    }
+    
+    .pricing-header {
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+    
+    .pricing-name {
+      color: var(--teal-medium);
+    }
+    
+    .pricing-price {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin: 1rem 0;
+    }
+    
+    .pricing-description {
+      font-size: 0.9rem;
+      color: #666;
+    }
+    
+    .feature-list {
+      list-style: none;
+      margin-bottom: 2rem;
+    }
+    
+    .feature-list li {
+      margin-bottom: 0.75rem;
+      display: flex;
+      align-items: center;
+    }
+    
+    .feature-list li:before {
+      content: "✓";
+      color: var(--teal-medium);
+      margin-right: 0.5rem;
+      font-weight: bold;
+    }
+    
+    /* Contact Section */
+    .contact {
+      padding: 5rem 0;
+      background-color: white;
+    }
+    
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      margin-top: 3rem;
+    }
+    
+    .contact-info h3 {
+      color: var(--teal-medium);
+    }
+    
+    .contact-info p {
+      margin-bottom: 1.5rem;
+    }
+    
+    .contact-method {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+    
+    .contact-icon {
+      background: var(--teal-light);
+      color: white;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      margin-right: 1rem;
+    }
+    
+    .contact-form {
+      background: var(--neutral-light);
+      padding: 2rem;
+      border-radius: 8px;
+    }
+    
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+    
+    .form-group label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: 500;
+    }
+    
+    .form-group input,
+    .form-group textarea {
+      width: 100%;
+      padding: 0.75rem;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      font-family: inherit;
+      font-size: 1rem;
+    }
+    
+    .form-group textarea {
+      min-height: 150px;
+      resize: vertical;
+    }
+    
+    /* Footer */
+    footer {
+      background-color: var(--teal-dark);
+      color: white;
+      padding: 3rem 0;
+    }
+    
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 2rem;
+    }
+    
+    .footer-logo {
+      color: var(--gold-primary);
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      display: block;
+    }
+    
+    .footer-links h4 {
+      color: var(--gold-primary);
+      margin-bottom: 1.5rem;
+    }
+    
+    .footer-links ul {
+      list-style: none;
+    }
+    
+    .footer-links li {
+      margin-bottom: 0.75rem;
+    }
+    
+    .footer-links a {
+      color: white;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    
+    .footer-links a:hover {
+      color: var(--gold-primary);
+    }
+    
+    .social-links {
+      display: flex;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    
+    .social-icon {
+      background: rgba(255,255,255,0.1);
+      color: white;
+      width: 36px;
+      height: 36px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      transition: all 0.3s ease;
+    }
+    
+    .social-icon:hover {
+      background: var(--gold-primary);
+      color: var(--teal-dark);
+    }
+    
+    .copyright {
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      text-align: center;
+      font-size: 0.875rem;
+      color: rgba(255,255,255,0.6);
+    }
+    
+    /* Media Queries */
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+      
+      .hero-btns {
+        flex-direction: column;
+        width: 100%;
+      }
+      
+      .btn {
+        width: 100%;
+        margin-bottom: 1rem;
+      }
+      
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .stat-card {
+        position: static;
+        margin-top: 1rem;
+      }
+      
+      .pricing-card.featured {
+        transform: none;
+      }
+      
+      .nav-links {
+        display: none;
+      }
+    }
+    
+    @media (min-width: 768px) {
+      .grid-cols-2 {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      
+      .hero-content {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 2rem;
+      }
+      
+      .hero-text {
+        flex: 1;
+      }
+      
+      .hero-image {
+        flex: 1;
+      }
+      
+      .hero h1 {
+        font-size: 3.5rem;
+      }
+    }
+    
+    @media (min-width: 1024px) {
+      .grid-cols-3 {
+        grid-template-columns: repeat(3, 1fr);
+      }
+      
+      .hero h1 {
+        font-size: 4rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <nav class="navbar">
+        <a href="#" class="logo">YTS Reel Crafters</a>
+        <ul class="nav-links">
+          <li><a href="#services">Services</a></li>
+          <li><a href="#results">Results</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#packages">Packages</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1>The <span class="text-gold">Astrology Content</span> Growth Experts</h1>
+          <p>We help astrology creators with 100K-300K followers double their views and sales in just 8 weeks.</p>
+          <div class="hero-btns">
+            <a href="#packages" class="btn btn-primary">View Packages</a>
+            <a href="#testimonials" class="btn btn-outline">See Client Results</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="https://images.unsplash.com/photo-1515942661900-94b3d1972591?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Astrology content creator">
+          <div class="stat-card">
+            <div class="stat-icon">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <div>
+              <p class="mb-2">Average Growth</p>
+              <p class="text-gold"><strong>2x in 8 Weeks</strong></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trusted By Section -->
+  <section class="trusted-by">
+    <div class="container text-center">
+      <h2>Trusted By Top Astrology Creators</h2>
+      <p>We've helped these incredible astrology influencers grow their audience and income</p>
+      <div class="trusted-logos">
+        <div class="trusted-logo">
+          <i class="fas fa-star fa-2x"></i>
+          <p>Cosmic Insights</p>
+        </div>
+        <div class="trusted-logo">
+          <i class="fas fa-moon fa-2x"></i>
+          <p>Lunar Wisdom</p>
+        </div>
+        <div class="trusted-logo">
+          <i class="fas fa-sun fa-2x"></i>
+          <p>Solar Astrology</p>
+        </div>
+        <div class="trusted-logo">
+          <i class="fas fa-meteor fa-2x"></i>
+          <p>Zodiac Masters</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services" id="services">
+    <div class="container text-center">
+      <h2>Our Premium Editing Services</h2>
+      <p>Specialized video editing services for astrology content creators</p>
+      <div class="service-grid">
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-magic"></i>
+          </div>
+          <h3>Cosmic Transformations</h3>
+          <p>Turn raw footage into captivating content that hooks viewers in the first 3 seconds and keeps them watching.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-chart-line"></i>
+          </div>
+          <h3>Algorithm Optimization</h3>
+          <p>Edit your videos with proven techniques that boost engagement and help the algorithm promote your content.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-cut"></i>
+          </div>
+          <h3>Multi-Format Creation</h3>
+          <p>Transform your long-form videos into high-performing short-form content for TikTok, Reels, and YouTube Shorts.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-star"></i>
+          </div>
+          <h3>Zodiac Graphics Package</h3>
+          <p>Custom animated zodiac graphics, transitions, and lower thirds that elevate your brand and increase professionalism.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-bullseye"></i>
+          </div>
+          <h3>Strategic Titles & Thumbnails</h3>
+          <p>Data-driven titles and eye-catching thumbnails that increase click-through rates and views.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-shopping-cart"></i>
+          </div>
+          <h3>Sales Conversion Editing</h3>
+          <p>Specialized editing for sales videos that convert viewers into paying customers for your services and products.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Results Section -->
+  <section class="results" id="results">
+    <div class="container text-center">
+      <h2>Our Client Results</h2>
+      <p>We've helped astrology creators achieve incredible growth</p>
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-number">2.3x</div>
+          <p>Average View Increase</p>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">87%</div>
+          <p>Higher Retention Rate</p>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">142%</div>
+          <p>Increase in Engagement</p>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">214%</div>
+          <p>More Sales Conversions</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials" id="testimonials">
+    <div class="container text-center">
+      <h2>What Our Clients Say</h2>
+      <p>Hear from astrology creators who've worked with us</p>
+      <div class="testimonial-grid">
+        <div class="testimonial-card">
+          <div class="testimonial-text">
+            "Since working with YTS Reel Crafters, my channel has exploded. My views have tripled and I've been able to launch a successful membership program. Their editing is top-notch!"
+          </div>
+          <div class="testimonial-author">
+            <div class="author-avatar">
+              <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Luna Starlight">
+            </div>
+            <div>
+              <div class="author-name">Luna Starlight</div>
+              <div class="author-title">Astrology Channel (250K followers)</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-text">
+            "The team at YTS knows exactly how to edit astrology content to maximize engagement. My sales for readings have doubled since I started working with them."
+          </div>
+          <div class="testimonial-author">
+            <div class="author-avatar">
+              <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Leo Celestial">
+            </div>
+            <div>
+              <div class="author-name">Leo Celestial</div>
+              <div class="author-title">Zodiac Insights (180K followers)</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-text">
+            "I was struggling to grow beyond 100K followers until I found YTS Reel Crafters. Their multi-format approach helped me explode on TikTok while maintaining my YouTube presence."
+          </div>
+          <div class="testimonial-author">
+            <div class="author-avatar">
+              <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Selena Moonrise">
+            </div>
+            <div>
+              <div class="author-name">Selena Moonrise</div>
+              <div class="author-title">Astral Pathways (310K followers)</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Packages Section -->
+  <section class="packages" id="packages">
+    <div class="container text-center">
+      <h2>Our Packages</h2>
+      <p>Choose the perfect editing package for your content needs</p>
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3 class="pricing-name">Cosmic Starter</h3>
+            <div class="pricing-price">$997/mo</div>
+            <p class="pricing-description">Perfect for creators looking to improve quality and growth</p>
+          </div>
+          <ul class="feature-list">
+            <li>4 fully edited videos per month</li>
+            <li>Basic graphics package</li>
+            <li>Optimized titles and descriptions</li>
+            <li>48-hour turnaround time</li>
+            <li>2 revisions per video</li>
+          </ul>
+          <a href="#contact" class="btn btn-outline" style="width: 100%;">Get Started</a>
+        </div>
+        <div class="pricing-card featured">
+          <div class="pricing-header">
+            <h3 class="pricing-name">Stellar Growth</h3>
+            <div class="pricing-price">$1,997/mo</div>
+            <p class="pricing-description">Our most popular package for serious creators</p>
+          </div>
+          <ul class="feature-list">
+            <li>8 fully edited videos per month</li>
+            <li>Premium zodiac graphics package</li>
+            <li>Multi-format delivery (YouTube, TikTok, Reels)</li>
+            <li>Data-driven thumbnail creation</li>
+            <li>24-hour turnaround time</li>
+            <li>Unlimited revisions</li>
+            <li>Monthly strategy call</li>
+          </ul>
+          <a href="#contact" class="btn btn-primary" style="width: 100%;">Get Started</a>
+        </div>
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3 class="pricing-name">Galactic Empire</h3>
+            <div class="pricing-price">$3,497/mo</div>
+            <p class="pricing-description">Full-service solution for established creators</p>
+          </div>
+          <ul class="feature-list">
+            <li>12 fully edited videos per month</li>
+            <li>Custom branded graphics package</li>
+            <li>Multi-format delivery for all platforms</li>
+            <li>Sales conversion optimization</li>
+            <li>Priority 12-hour turnaround</li>
+            <li>Unlimited revisions</li>
+            <li>Weekly strategy calls</li>
+            <li>Audience growth consultation</li>
+          </ul>
+          <a href="#contact" class="btn btn-outline" style="width: 100%;">Get Started</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <h2 class="text-center">Ready to Grow Your Astrology Channel?</h2>
+      <p class="text-center mb-8">Contact us today to get started with our expert editing services</p>
+      
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h3>Get In Touch</h3>
+          <p>Fill out the form or contact us directly through one of these methods:</p>
+          
+          <div class="contact-method">
+            <div class="contact-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div>
+              <strong>Email Us</strong>
+              <p>hello@ytsreelcrafters.com</p>
+            </div>
+          </div>
+          
+          <div class="contact-method">
+            <div class="contact-icon">
+              <i class="fas fa-phone"></i>
+            </div>
+            <div>
+              <strong>Call Us</strong>
+              <p>(555) 123-4567</p>
+            </div>
+          </div>
+          
+          <div class="contact-method">
+            <div class="contact-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div>
+              <strong>Our Location</strong>
+              <p>Los Angeles, CA</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="contact-form">
+          <form id="contactForm">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="channel">Your Channel/Page Name</label>
+              <input type="text" id="channel" name="channel">
+            </div>
+            
+            <div class="form-group">
+              <label for="followers">Follower Count</label>
+              <input type="text" id="followers" name="followers" placeholder="e.g. 150K">
+            </div>
+            
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+            
+            <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="#" class="footer-logo">YTS Reel Crafters</a>
+          <p>Helping astrology creators grow their audience and income through expert video editing.</p>
+          <div class="social-links">
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-tiktok"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+        
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#results">Results</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#packages">Packages</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-links">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="copyright">
+        <p>&copy; 2025 YTS Reel Crafters. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Simple form handling
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Thank you for your message! We will get back to you shortly.');
+      this.reset();
+    });
+    
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        const targetId = this.getAttribute('href');
+        if (targetId === '#') return;
+        
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+          window.scrollTo({
+            top: targetElement.offsetTop - 80, // Accounting for fixed header
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
